@@ -37,10 +37,22 @@ class GlassCalc(ctk.CTk):
 
     def _build_grid(self):
         buttons = [
-            ('AC', 0, 0, 'glass_top'), ('±', 0, 1, 'glass_top'), ('%', 0, 2, 'glass_top'), ('÷', 0, 3, 'glass_op'),
-            ('7', 1, 0, 'glass_num'), ('8', 1, 1, 'glass_num'), ('9', 1, 2, 'glass_num'), ('×', 1, 3, 'glass_op'),
-            ('4', 2, 0, 'glass_num'), ('5', 2, 1, 'glass_num'), ('6', 2, 2, 'glass_num'), ('-', 2, 3, 'glass_op'),
-            ('1', 3, 0, 'glass_num'), ('2', 3, 1, 'glass_num'), ('3', 3, 2, 'glass_num'), ('+', 3, 3, 'glass_op'),
+            ('AC', 0, 0, 'glass_top'),
+            ('±', 0, 1, 'glass_top'), 
+            ('%', 0, 2, 'glass_top'),
+            ('÷', 0, 3, 'glass_op'),
+            ('7', 1, 0, 'glass_num'), 
+            ('8', 1, 1, 'glass_num'), 
+            ('9', 1, 2, 'glass_num'),
+            ('×', 1, 3, 'glass_op'),
+            ('4', 2, 0, 'glass_num'),
+            ('5', 2, 1, 'glass_num'),
+            ('6', 2, 2, 'glass_num'), 
+            ('-', 2, 3, 'glass_op'),
+            ('1', 3, 0, 'glass_num'),
+            ('2', 3, 1, 'glass_num'),
+            ('3', 3, 2, 'glass_num'),
+            ('+', 3, 3, 'glass_op'),
             ('0', 4, 0, 'glass_wide'),                ('.', 4, 2, 'glass_num'), ('=', 4, 3, 'glass_eq')
         ]
 
@@ -99,3 +111,4 @@ if __name__ == "__main__":
     app = GlassCalc()
 
     app.mainloop()
+

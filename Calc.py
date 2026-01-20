@@ -53,15 +53,32 @@ class GlassCalc(ctk.CTk):
             ('2', 3, 1, 'glass_num'),
             ('3', 3, 2, 'glass_num'),
             ('+', 3, 3, 'glass_op'),
-            ('0', 4, 0, 'glass_wide'),                ('.', 4, 2, 'glass_num'), ('=', 4, 3, 'glass_eq')
+            ('0', 4, 0, 'glass_wide'),                
+            ('.', 4, 2, 'glass_num'), 
+            ('=', 4, 3, 'glass_eq')
         ]
 
         colors = {
-            'glass_num':  {"bg": "#242830", "hover": "#323842", "text": "#FFFFFF", "border": "#404652"},
-            'glass_wide': {"bg": "#242830", "hover": "#323842", "text": "#FFFFFF", "border": "#404652"},
-            'glass_top':  {"bg": "#3D4450", "hover": "#4D5564", "text": "#FFFFFF", "border": "#5D677A"},
-            'glass_op':   {"bg": "#1F4E79", "hover": "#2B6CB0", "text": "#FFFFFF", "border": "#3182CE"},
-            'glass_eq':   {"bg": "#2D3748", "hover": "#4A5568", "text": "#63B3ED", "border": "#63B3ED"}
+            'glass_num':  {"bg": "#242830",
+                           "hover": "#323842", 
+                           "text": "#FFFFFF", 
+                           "border": "#404652"},
+            'glass_wide': {"bg": "#242830", 
+                           "hover": "#323842", 
+                           "text": "#FFFFFF",
+                           "border": "#404652"},
+            'glass_top':  {"bg": "#3D4450",
+                           "hover": "#4D5564", 
+                           "text": "#FFFFFF",
+                           "border": "#5D677A"},
+            'glass_op':   {"bg": "#1F4E79",
+                           "hover": "#2B6CB0",
+                           "text": "#FFFFFF", 
+                           "border": "#3182CE"},
+            'glass_eq':   {"bg": "#2D3748", 
+                           "hover": "#4A5568", 
+                           "text": "#63B3ED",
+                           "border": "#63B3ED"}
         }
 
         for (text, r, c, t) in buttons:
@@ -111,4 +128,5 @@ if __name__ == "__main__":
     app = GlassCalc()
 
     app.mainloop()
+
 

@@ -36,7 +36,6 @@ class GlassCalc(ctk.CTk):
         self._build_grid()
 
     def _build_grid(self):
-        # FIXED: Row indexing for '×' and '-' to ensure both appear
         buttons = [
             ('AC', 0, 0, 'glass_top'), ('±', 0, 1, 'glass_top'), ('%', 0, 2, 'glass_top'), ('÷', 0, 3, 'glass_op'),
             ('7', 1, 0, 'glass_num'), ('8', 1, 1, 'glass_num'), ('9', 1, 2, 'glass_num'), ('×', 1, 3, 'glass_op'),
@@ -98,4 +97,5 @@ class GlassCalc(ctk.CTk):
 
 if __name__ == "__main__":
     app = GlassCalc()
+
     app.mainloop()
